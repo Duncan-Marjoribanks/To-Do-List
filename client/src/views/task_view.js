@@ -7,7 +7,7 @@ const TaskView = function (element) {
 TaskView.prototype.render = function (data) {
   const taskName = document.createElement('p');
   const taskDescription = document.createElement('p');
-  const deleteButton = document.createElement('button');
+  const deleteButton = document.createElement('button', id='delete-btn');
   deleteButton.textContent = "delete";
   deleteButton.addEventListener('click', () => {
     PubSub.publish('TaskView:delete-requested', data._id);
