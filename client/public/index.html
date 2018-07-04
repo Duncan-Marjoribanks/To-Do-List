@@ -2,9 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src='/js/bundle.js'></script>
     <title></title>
   </head>
   <body>
-   <h1>Yahoo</h1>
+   <h1>Title</h1>
+   <form id="tasks-input-form" >
+
+     <label for="task">Task Name</label>
+     <input type="text" id="task" required>
+
+     <label for="description">Task Description</label>
+     <input type="text" id="description">
+
+     <input type="submit" id="save" value="save">
+   </form>
+      <div id="hook"></div>
   </body>
 </html>
